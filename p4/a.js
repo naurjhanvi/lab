@@ -7,7 +7,6 @@ async function run() {
     await col.drop().catch(() => {}); 
     const result = await col.insertMany(require("./data.json"));
 
-    console.log(`Inserted ${result.insertedCount} students successfully!`);
     client.close();
 }
 

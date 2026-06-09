@@ -7,14 +7,11 @@ export default function App() {
   return (
     <div style={{ padding: "20px" }}>
       <h2>React Search Filter</h2>
-      
-      {/* 1. Input updates the state as you type */}
       <input 
         placeholder="Search fruits..." 
         onChange={(e) => setQuery(e.target.value.toLowerCase())} 
       />
-
-      {/* 2. Filter the list, then display it */}
+      
       <ul>
         {fruits
           .filter(fruit => fruit.toLowerCase().includes(query))
