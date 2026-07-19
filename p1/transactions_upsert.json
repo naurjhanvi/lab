@@ -1,8 +1,0 @@
-[
-    {
-        "_id":2,
-        "Nmae":"Tom",
-        "Payment":{"Total":100},
-        "Transaction": {"Price":100}
-    }
-]
